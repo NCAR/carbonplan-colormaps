@@ -267,6 +267,14 @@ const makeColormap = (name, options) => {
       bezier = false
       ramp = [...chroma.brewer['RdYlBu']].reverse()
       break
+    case 'BrBG':
+      bezier = false
+      ramp = chroma.brewer['BrBG']
+      break
+    case 'seismic':
+      bezier = false
+      ramp = [...chroma.brewer['RdBu']].reverse()
+      break
     case 'blueprecip':
       bezier = false
       // console.log("THIS SHOULD GET PRINTED MAKE COLORMAP");
